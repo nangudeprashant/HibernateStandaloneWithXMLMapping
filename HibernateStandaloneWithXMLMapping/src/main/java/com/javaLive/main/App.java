@@ -1,4 +1,4 @@
-package com.javaLive.service;
+package com.javaLive.main;
 import java.util.List;
 
 import org.hibernate.Session;
