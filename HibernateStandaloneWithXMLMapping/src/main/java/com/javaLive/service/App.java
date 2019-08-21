@@ -1,10 +1,11 @@
-package com.javaLive.entity;
+package com.javaLive.service;
 import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import com.javaLive.databaseUtil.*;
+import com.javaLive.entity.Student;
 
 public class App {
     public static void main(String[] args) {
