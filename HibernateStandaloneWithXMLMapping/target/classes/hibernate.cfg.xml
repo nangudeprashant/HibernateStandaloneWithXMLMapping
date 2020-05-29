@@ -15,15 +15,20 @@
         <!-- Echo the SQL to stdout -->
         <property name="show_sql">true</property>
         <!-- Set the current session context -->
-        <property name="current_session_context_class">thread</property>
+        <!-- http://rbyjava.blogspot.com/2012/05/what-is-currentsessioncontextclass-in.html --> 
+        <property name="current_session_context_class">thread</property><!-- Read above link  for more explanation -->
         <!-- Drop and re-create the database schema on startup -->
         <!-- <property name="hbm2ddl.auto">create-drop</property> -->
+        
+        <!-- Following are the properties related to dbcp connection pooling. Use only when you want dbcp functionality in the project.-->
         <!-- dbcp connection pool configuration -->
         <property name="hibernate.dbcp.initialSize">5</property>
         <property name="hibernate.dbcp.maxTotal">20</property>
         <property name="hibernate.dbcp.maxIdle">10</property>
         <property name="hibernate.dbcp.minIdle">5</property>
         <property name="hibernate.dbcp.maxWaitMillis">-1</property>
+        
+        <!-- Mapping entity classes -->
         <mapping resource="com/javaLive/entity/Student.hbm.xml" />
     </session-factory>
 </hibernate-configuration>
