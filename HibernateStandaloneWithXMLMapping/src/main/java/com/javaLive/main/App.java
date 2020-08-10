@@ -55,7 +55,6 @@ public class App {
             e.printStackTrace();
         }
     }
-
     public void getStudentList(){
         try  {
         	Session session = HibernateUtil.getSessionFactory().openSession();
